@@ -21,14 +21,14 @@ build_docker() {
 modify_app() {
     echo "Modifying the application..."
     sleep 3
-    export PORT=8080
+    export PORT=5001
     echo "Modifications done. Port is now set to $PORT"
 }
 # Function to run the Docker container
 run_docker() {
     echo "Running Docker container..."
     sleep 3
-    docker run -d -p 8080:$PORT -e PORT=$PORT $DOCKER_IMAGE
+    docker run -d -p 3000:$PORT -e PORT=$PORT $DOCKER_IMAGE
 }
 # Main script execution
 echo "Starting build process..."
