@@ -2,7 +2,7 @@
 # Exit script if any command fails
 set -e
 # Define Docker image name
-DOCKER_IMAGE="lbg"
+DOCKER_IMAGE="lbg/1.0"
 cleanup() {
     echo "Cleaning up previous build artifacts..."
     sleep 3
