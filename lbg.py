@@ -9,7 +9,7 @@ from flask_api import status
 # import SQL Alchemy (including ORM - Object-relational Mapper - and its data mapper pattern)
 from models import db, ItemModel
 from sqlalchemy import exc
-from os
+import os
 
 # JavaScript/ES6 text/plain MIME Content type fix (avoids registry hack!)
 import mimetypes
